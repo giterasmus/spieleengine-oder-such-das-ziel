@@ -27,13 +27,8 @@ basic.forever(function () {
 })
 // Dieser Code läuft im Hintergrund!
 // Es ist wichtig, das 
-// 
-// eine Endlosschleife und eine Pause 
-// 
-// enthalten sind, da sonst keine Ereignisse abgefangen werden.
-// (bzw. nur zufällig)
-// 
-// Erfüllt denselben Zweck wie "Dauerhaft"
+// eine Endlosschleife und eine Pause enthalten sind, da sonst keine Ereignisse abgefangen werden. (bzw. nur zufällig eines wenn man schnell genug ist)
+// Der Block erfüllt denselben Zweck wie "Dauerhaft"
 control.inBackground(function () {
     while (true) {
         if (Sucher.isTouching(Ziel)) {
